@@ -1,37 +1,38 @@
-function startRecognition() {
+function iniciarReconocimiento() {
     if (!('webkitSpeechRecognition' in window)) {
         alert('API de reconocimiento de voz no soportada');
         return;
     }
 
-    const recognition = new webkitSpeechRecognition();
-    recognition.lang = 'es-ES';
-    recognition.continuous = false;
-    recognition.interimResults = false;
+    const reconocimiento = new webkitSpeechRecognition();
+    reconocimiento.lang = 'es-ES';
+    reconocimiento.continuo = false;
+    reconocimiento.resultadosIntermedios = false;
 
-    recognition.onstart = function() {
+    reconocimiento.onstart = function() {
         console.log('Iniciando reconocimiento...');
     };
 
-    recognition.onresult = function(event) {
-        const result = event.results[0][0].transcript;
-        const numberElement = document.getElementById('number');
-        numberElement.innerText = `Número detectado: ${result}`;
-        numberElement.classList.add('appear');
-        console.log(`Número detectado: ${result}`);
+    reconocimiento.onresult = function(evento) {
+        const resultado = evento.results[0][0].transcript;
+        const elementoNumero = document.getElementById('number');
+        elementoNumero.innerText = `Número detectado: ${resultado}`;
+        elementoNumero.classList.add('appear');
+        console.log(`Número detectado: ${resultado}`);
 
         setTimeout(() => {
-            numberElement.classList.remove('appear');
+            elementoNumero.classList.remove('appear');
         }, 500);
     };
 
-    recognition.onerror = function(event) {
-        console.error('Error de reconocimiento: ', event.error);
+    reconocimiento.onerror = function(evento) {
+        console.error('Error de reconocimiento: ', evento.error);
     };
 
-    recognition.onend = function() {
+    reconocimiento.onend = function() {
         console.log('Reconocimiento terminado.');
     };
 
-    recognition.start();
+    reconocimiento.start();
 }
+
