@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 2px;
+}
+
+.hero_area {
+    width: 100%;
+}
+.containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    width: 800px;
+    background: rgba(112, 63, 189, 0.174);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14pt;
+    
+
+}
+#countdown {
+    display: flex;
+    gap: 20px;
+}
+.time-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+    color:rgba(2, 2, 2, 0.941)
+    
+}

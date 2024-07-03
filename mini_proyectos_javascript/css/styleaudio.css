@@ -1,0 +1,75 @@
+body {
+    background: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header_section {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.containerr {
+    text-align: center;
+    background: rgba(112, 63, 189, 0.174);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 80px; /* Adjust this value based on your header height */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background:#5450559b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #904caf;
+}
+
+.number {
+    font-size: 2em;
+    color: purple;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #904caf;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.number.appear {
+    animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: white;
+}
+
+.containerr {
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 30 px;
+    padding: 18 px;
+}
+
+.a { background-color: #D7BDE2 ; }
+.b { background-color: #C0C0C0; }
+.c { background-color: #F6DDCC; }
+
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin: 40px auto;
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+.box.d{
+    background: #D7BDE2 ;
+    
+}
+.box.e{
+    background: #C0C0C0;
+    
+}
+.box.f{
+    background: #F6DDCC;
+    
+}

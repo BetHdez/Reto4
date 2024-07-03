@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+canvas {
+    background: rgb(145, 142, 142);
+    border: 5px solid #000; /* Bordes visibles */
+    box-sizing: border-box; /* Incluye el borde en las dimensiones del canvas */
+}
+
