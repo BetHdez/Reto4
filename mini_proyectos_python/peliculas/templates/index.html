@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>RATINGS DE PELICULAS</h1> <br>
+        <form method="POST">
+            <input type="text" name="titulop" placeholder="Escribe el titulo de la pelicula" required>
+            <button type="submit">buscar</button>
+        </form>
+        <br>
+
+        {% if peliculas %}
+        <h2>Rating de "{{ request.form['titulop'] }}"</h2>
+        <ul>
+            {% for pelicula in peliculas %}
+            <li>
+                <strong>{{ pelicula['title'] }}</strong> ({{ pelicula['release_date'][:4] if pelicula['release_date'] else 'N/A' }}) - Rating: {{ pelicula['vote_average'] }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% elif error %}
+        <p>{{ error }}</p>
+        {% endif %} <br>
+        <div class="center-button">
+            <a href="{{ url_for('popular') }}" class="button">Ir a los ratings de las peliculas del momento </a>
+        </div>
+    </div>
+</body>
+</html>
+
