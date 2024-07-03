@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Números a Palabras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylenum.css') }}">
+</head>
+<body>
+    <div class="containerr">
+        <h1>Conversor de Números a Palabras</h1>
+        <form method="POST">
+            <label for="num">Introduce un número:</label>
+            <input type="text" id="num" name="num" required>
+            <button type="submit">Convertir</button>
+        </form>
+        {% if num_palabra %}
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p class="num_palabra">{{ num_palabra }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
