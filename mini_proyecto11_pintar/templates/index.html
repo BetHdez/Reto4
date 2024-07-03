@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar en la pantalla</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pintar en la pantalla con el cursor</h1>
+    <canvas id="drawingCanvas" width="800" height="500"></canvas>
+    <div class="controls">
+        <div class="palette">
+            <button class="color-button" style="background-color: red;" onclick="changeColor('red')"></button>
+            <button class="color-button" style="background-color: blue;" onclick="changeColor('blue')"></button>
+            <button class="color-button" style="background-color: green;" onclick="changeColor('green')"></button>
+            <button class="color-button" style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+            <select id="thickness" onchange="changeThickness()">
+                <option value="">Grosor</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="actions">
+            <button class="action-button" onclick="undo()">Deshacer</button>
+            <button class="action-button" onclick="clearCanvas()">Limpiar</button>
+        </div>
+    </div>
+    <script src="static/main.js"></script>
+</body>
+</html>
+
