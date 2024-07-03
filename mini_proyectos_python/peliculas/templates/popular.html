@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas populares </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ratings de las peliculas del momento</h1>
+        
+        <ul>
+            {% for pelicula in peliculas %}
+            <li>
+                <strong>{{ pelicula['title'] }}</strong> ({{ pelicula['release_date'][:4] if pelicula['release_date'] else 'N/A' }}) - Rating: {{ pelicula['vote_average'] }}
+            </li>
+            {% endfor %}
+            <div class="center-button">
+                <a href="{{ url_for('index') }}" class="button">Regresar</a>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
+
