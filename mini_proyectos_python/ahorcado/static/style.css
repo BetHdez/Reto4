@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.mostrarLetra {
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    margin: 20px;
+}
+
+.intentosRestantes {
+    font-size: 1.2em;
+    color: #ff0000bc;
+}
+
+#imagenes {
+    width: 200px;
+    height: auto;
+}
+
+#letraEntrante {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #9b5ea8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #67368a8c;
+}
+
+#mensaje {
+    font-size: 2.5em;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.keyboard {
+    margin-top: 20px;
+}
+
+.keyboard button {
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.keyboard button.correcto {
+    background-color: #28a745;
+    color: white;
+}
+
+.keyboard button.error {
+    background-color: #dc3545;
+    color: white;
+}
