@@ -1,0 +1,192 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+.layout_padding {
+  padding: 75px 0;
+}
+
+.layout_padding2 {
+  padding: 45px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 75px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 75px;
+}
+
+.custom_heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom_heading-container h2 {
+  font-weight: bold;
+  border-bottom: 1px solid #feb543;
+  padding-bottom: 5px;
+}
+
+/*header section*/
+.hero_area {
+  height: 94vh;
+  background: -webkit-gradient(linear, left top, right top, from(#864ddf), to(#203376));
+  background: linear-gradient(to right, #864ddf, #203376);
+}
+
+.hero_area::before {
+  content: "";
+  position: absolute;
+  width: 58%;
+  height: 86%;
+  background-image: url(../images/hero-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 25px;
+  right: 0;
+}
+
+.sub_page .hero_area {
+  height: auto;
+}
+
+.sub_page .hero_area::before {
+  display: none;
+}
+
+.hero_area.sub_pages {
+  height: auto;
+}
+
+.header_section {
+  padding-top: 15px;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 30px;
+  color: #f9fcfb;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fafcfd;
+}
+
+.custom_nav-container .nav_search-btn {
+  background-image: url(../images/search-icon.png);
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f9fcfb;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.custom_nav-container {
+  z-index: 99999;
+  padding: 5px 0;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../images/menu.png);
+  background-size: 40px;
+}
+
+/*end header section*/
+/* slider section */
+.slider_section {
+  color: #f9fcfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+
+
+
+
