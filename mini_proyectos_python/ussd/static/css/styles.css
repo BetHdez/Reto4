@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: rgba(171, 117, 188, 0.274);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+h2 {
+    color: #333;
+}
+pre {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"], input[type="submit"], button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input[type="submit"], button {
+    background-color: #148b40;
+    color: white;
+    cursor: pointer;
+    width: 300;
+    display: block; /* O inline-block */
+    margin: 0 auto;
+}
+button {
+    background-color: #131212a5;
+    width: 300 px;
+    display: block; /* O inline-block */
+    margin: 0 auto;
+}
