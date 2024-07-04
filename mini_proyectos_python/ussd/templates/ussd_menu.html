@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USSD Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>USSD Menu</h2>
+        <pre>{{ message }}</pre>
+        <form method="post">
+            <input type="hidden" name="session_id" value="{{ session_id }}" />
+            <input type="text" name="user_input" value="{{ user_input }}" />
+            <br>
+            <input type="submit" value="Enviar" />
+            <br>
+            <button type="submit" name="cancel" value="cancel">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
